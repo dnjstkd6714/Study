@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Table</title>
+		<style>
+			table, td
+			{
+				border-width: 1px;
+				border-style: dotted;
+				border-color: blue;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Html 테이블(그리드)만들기 &lt;table&gt;</h1>
+		<a href="./index.html">목록</a>
+		<h3>1. table</h3>
+			<ul>
+				<li>테이블은 &lt;table&gt;태그를 사용</li>
+				<li>이블 행은 &lt;tr&gt;을 사용</li>
+				<li>행을 셀(데이터를 가지는 요소)로 분할 하는 태그는 &lt;td&gt;를 사용</li>
+				<li>테이블의 너비, 테두리, 패딩,  셀간격, 경계설정 등은 CSS를 사용</li>			
+			</ul>
+			<ol>
+				<li>&lt;table style="width:300px"&gt;</li>
+				<li>&lt;tr&gt;</li>
+				<li>&nbsp; &lt;td&gt;Jill&lt;/td&gt;</li>
+				<li>&nbsp; &lt;td&gt;Smith&lt;/td&gt;</li>
+				<li>&nbsp; &lt;td&gt;50&lt;/td&gt;</li>
+				<li>&lt;/tr&gt;</li>
+				<li>&lt;tr&gt;</li>
+				<li>&nbsp; &lt;td&gt;Eve&lt;/td&gt;</li>
+				<li>&nbsp; &lt;td&gt;Jackson&lt;/td&gt;</li>
+				<li>&nbsp; &lt;td&gt;94&lt;/td&gt;</li>
+				<li>&lt;/tr&gt;</li>
+				<li>&lt;/table&gt;</li>
+			</ol><br>
+			<ol>
+				<li>&lt;style&gt;</li>
+				<li>table,tr,th,td</li>
+				<li>{</li>
+				<li>border:1px solid black;</li>
+				<li>}</li>
+				<li>&lt;/style&gt;</li>
+				<li></li>
+				<li>&lt;style&gt;</li>
+				<li>table,tr,th,td</li>
+				<li>{</li>
+				<li>border-collapse:collapse</li>
+				<li>}</li>
+				<li>&lt;/style&gt;</li>
+				<li></li>
+				<li>&lt;style&gt;</li>
+				<li>th,td</li>
+				<li>{</li>
+				<li>padding:5px;</li>
+				<li>}</li>
+				<li>&lt;/style&gt;</li>
+				<li></li>
+				<li>&lt;style&gt;</li>
+				<li>table</li>
+				<li>{</li>
+				<li>border-spacing:5px;</li>
+				<li>}</li>
+				<li>&lt;/style&gt;</li>
+			</ol>
+		<h3>2. &lt;th&gt; 열 제목 태그</h3>
+			<ol>
+				<li>&lt;table style="width:300px"&gt;</li>
+				<li>&lt;tr&gt;</li>
+				<li>&nbsp; &lt;th&gt;First&lt;/th&gt;</li>
+				<li>&nbsp; &lt;th&gt;Last&lt;/th&gt;</li>
+				<li>&nbsp; &lt;th&gt;Points&lt;/th&gt;</li>
+				<li>&lt;/tr&gt;</li>
+				<li>&lt;tr&gt;</li>
+				<li>&nbsp; &lt;td&gt;Eve&lt;/td&gt;</li>
+				<li>&nbsp; &lt;td&gt;Jackson&lt;/td&gt;</li>
+				<li>&nbsp; &lt;td&gt;94&lt;/td&gt;</li>
+				<li>&lt;/tr&gt;</li>
+				<li>&lt;/table&gt;</li>
+			</ol>
+		<h3>3. 테이블 관련 태그</h3>
+			<div>&lt;caption&gt;<br>&lt;colgroup&gt;<br>&lt;col&gt;<br>&lt;thead&gt;<br>&lt;tbody&gt;<br>
+			&lt;tfoot&gt;<br></div>
+		<h3>4. 테이블 관련 속성</h3>
+			<div>colspan<br>rowspan</div>
+		
+		<table>
+		<!-- 1행에 셀이 2개 : 1행 2열  *열이라는 형태는 존재하지 않지만 우리가 통상적 편의상 불러왔던 형태임.-->
+		<!-- 기준에 td colspan(행합침), rowspan(열합침)="2"(합칠갯수)-->
+			<thead>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</tfoot>
+		</table>
+
+	</body>
+</html>
+

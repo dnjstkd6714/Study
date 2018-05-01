@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+	<h1>HTML 헤드 요소 &lt;head&gt;...&lt;/head&gt;</h1>
+	<a href="./index.html">목록</a>
+	</body>
+	<h3>1. &lt;head&gt; 요소</h3>
+		<div>&lt;head&gt;태그는 브라우즈 정보, 메타 정보, 스크립트, 스타일 시트 등의 요소를 포함할 수 있다.</div>
+	<h3>2. &lt;title&gt; 요소</h3>
+		<ul>
+			<li>브라우저 툴바의 제목을 정의한다.</li>
+			<li>즐겨 찾기에 추가 될 때 페이지 제목을 제공한다.</li>
+			<li>검색 엔진의 검색 결과에서 페이지의 제목을 표시한다.</li>
+		</ul>
+		<ol>
+			<li>&lt;!DOCTYPE html&gt;</li>
+			<li>&lt;html&gt;</li>
+			<li>&lt;head&gt;</li>
+			<li>&lt;title&gt;Title of the document&lt;/title&gt;</li>
+			<li>&lt;/head&gt;</li>
+			<li></li>
+			<li>&lt;body&gt;</li>
+			<li>The content of the document......</li>
+			<li>&lt;/body&gt;</li>
+			<li></li>
+			<li>&lt;/html&gt;</li>
+		</ol>
+	<h3>3. &lt;base&gt; 요소</h3>
+		<div> &lt;base&gt;태그는 문서안에 있는 상대적인 주소를 분석하는데 어떤 경로를 사용할 것인지를 정의합니다. 문서내에 있는 링크<br>
+참조에 경로명을 전부 넣지 않아도 되는 유용한 기능을 한다.</div>
+		<div>예를들어, 해당 웹페이지를 다른 경로나 웹싸이트에서 사용하지만 해당 웹페이지에서 사용한 이미지는 다른도메인에 속해있<br>
+		다면,  이미지의 경로를 일일이 &lt;img src="http://domain.com/images/imgname.gif"&gt;같은 형식으로 사용하지 않고 &lt;img<br>
+		src="imgname.gif"&gt;로만 사용해도 가능하게 된다.</div>
+			<ol>
+				<li>&lt;head&gt;</li>
+				<li>&lt;base href="http://www.w3schools.com/images/" target="_blank"&gt;</li>
+				<li>&lt;/head&gt;</li>
+			</ol>
+	
+	<h3>4.  &lt;link&gt; 요소</h3>
+		<div>&lt;link&gt; 태그는 문서와 외부 자원 사이의 관계를 정의한다.</div>
+		<div>&lt;link&gt; 태그는 대부분의 스타일 시트에 연결하는 데 사용됩니다</div>
+			<ol>
+				<li>&lt;head&gt;</li>
+				<li>&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;</li>
+				<li>&lt;/head&gt;</li>
+			</ol>
+	
+	<h3>5.  &lt;style&gt; 요소</h3>
+		<div>&lt;style&gt; 태그는 HTML 문서에 대한 스타일 정보를 정의하는 데 사용됩니다.</div>
+		<div>&lt;style&gt; 요소 내에서 HTML 요소가 브라우저에 렌더링하는 방법을 지정합니다</div>
+			<ol>
+				<li>&lt;head&gt;</li>
+				<li>&lt;style type="text/css""&gt;</li>
+				<li>body {background-color:yellow;}</li>
+				<li>p {color:blue;}</li>
+				<li>&lt;/style&gt;</li>
+				<li>&lt;/head&gt;</li>
+			</ol>
+	
+	<h3>6.  &lt;meta&gt; 요소</h3>
+		<div>메타 데이터는 웹 페이지에 표시되지 않지만, 페이지에 대한 메타정보를 정의한다. 메타 정보는 일반적으로 페이지의 설명,<br>
+		키워드, 문서의 작성자, 마지막으로 수정 및 기타 메타 데이터를 말한다. 메타정보는 브라우즈, 검색엔진 등의 웹서비스에서<br>
+		사용된다.</div>
+		<div>&lt;meta&gt;태그는 항상 &lt;head&gt;요소 내에서 이동합니다.</div>
+			<ol>
+				<li>&lt;META NAME="Generator" CONTENT="페이지 제작툴"&gt;</li>
+				<li>&lt;META NAME="Author" CONTENT="제작자"&gt;</li>
+				<li>&lt;META NAME="Keywords" CONTENT="컴색 키워드"&gt;</li>
+				<li>&lt;META NAME="Description" CONTENT="페이지의 요약설명"&gt;</li>
+				<li>&lt;META NAME="Copyright" CONTENT="저작권 정보"&gt;</li>
+				<li>&lt;META NAME="Subject" CONTENT="홈페이지주제 입력"&gt;</li>
+				<li>&lt;META NAME="Title" CONTENT="홈피이름"&gt;</li>
+				<li>&lt;META NAME="Publisher" CONTENT="만든단체 또는 회사"&gt;</li>
+				<li>&lt;META NAME="Other Agent" CONTENT="홈피 책임자"&gt;</li>
+				<li>&lt;META NAME="Classification" CONTENT="카테고리 분류"&gt;</li>
+				<li>&lt;META NAME="Reply-To(Email)" CONTENT="메일주소"&gt;</li>
+				<li>&lt;META NAME="FileNAME" CONTENT="파일이름 입력"&gt;</li>
+				<li>&lt;META NAME="Author-Date(Date)" CONTENT="제작일"&gt;</li>
+				<li>&lt;META NAME="Location" CONTENT="위치/대한민국인지등 나라이름기록"&gt;</li>
+				<li>&lt;META NAME="Distribution" CONTENT="배포자"&gt;</li>
+				<li>&lt;META NAME="Copyright" CONTENT="저작권"&gt;</li>
+				<li></li>
+				<li>&lt;META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8"&gt; &lt;!-- /문자인코딩/ --&gt;</li>
+				<li>&lt;META HTTP-EQUIV="Refresh" CONTENT="60"&gt; &lt;!-- //60초 마다 새로고침 --&gt;</li>
+				<li>&lt;META HTTP-EQUIV="Refresh" CONTENT="3;url=http://cafe.naver.com/jjdev"&gt; &lt;!-- //주소로 3초후 이동 --&gt;</li>
+				<li>&lt;META HTTP-EQUIV="Pragma" CONTENT="no-cache"&gt; &lt;!-- //캐쉬가 저장 되지 않게 함 --&gt;</li>
+				<li>&lt;META HTTP-EQUIV="Expires" CONTENT=" Mon, 08 Sep 2011 12:00:00 GMT"&gt; &lt;!-- //캐쉬 만료일 --&gt;</li>
+			</ol>
+	
+	
+	
+	<h3>7.  &lt;script&gt; 요소</h3>
+		<div>javascript와 같은 클라이언트 측 스크립트를 정의하는데 사용된다. &lt;script&gt;요소는 이 후 장에서 설명한다.</div>
+		</body>
+	
+</html>
