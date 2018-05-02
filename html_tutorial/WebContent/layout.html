@@ -6,7 +6,54 @@
 	</head>
 
 	<body>
- 		<h1>layout</h1>
+ 		<h1>HTML div태그을 이용한 레이아웃</h1>
+ 		<a href="./index.html">목록</a>
+ 			<h3>1. &lt;div&gt;태그를 이용한 웹페이지의 레이아웃</h3>
+				<ol>
+					<li>&lt;!DOCTYPE html&gt;</li>
+					<li>&lt;html&gt;</li>
+					<li>&lt;body&gt;</li>
+					<li></li>
+					<li>&lt;div id="container" style="width:500px"&gt;</li>
+					<li></li>					
+					<li>&lt;div id="header" style="background-color:#FFA500;"&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; &lt;h1 style="margin-bottom:0;"&gt;Main Title of Web Page&lt;/h1&gt;</li>
+					<li>&lt;/div&gt;</li>
+					<li>&lt;id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;"&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; &lt;b&gt;Menu&lt;/b&gt;&lt;br&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; HTML&lt;br&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; CSS&lt;br&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; JavaScript</li>
+					<li>&lt;/div&gt;</li>
+					<li>&lt;div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;"&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; Content goes here</li>
+					<li>&lt;/div&gt;</li>
+					<li>&lt;div id="footer" style="background-color:#FFA500;clear:both;text-align:center;"&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; Copyright ⓒ W3Schools.com</li>
+					<li>&lt;/div&gt;</li>
+					<li>&lt;/div&gt;</li>
+					<li></li>
+					<li>&lt;/body&gt;</li>
+					<li>&lt;/html&gt;</li>										
+				</ol>
+					<div>* css float 속성</div><br>
+					
+					<div>inherit - 기본 값이며, 요소를 감싸는 바깥 요소에서 float 속성을 상속받는다.</div>
+					<div>left - 요소는 왼쪽에 부유하는 블록 박스를 생성한다. 페이지 내용은 박스 오른쪽에 위치하며 위에서 아래로 흐른다. 이후<br>
+					요소에 clear 속성이 있으면 페이지 흐름이 달라진다. none 이 아니라면 display 속성은 무시된다.</div>
+					<div>right - 요소는 오른쪽에 부유하는 블록 박스를 생성한다. 페이지 내용은 박스 왼쪽에 위치하며 위에서 아래로 흐른다. 이후<br>
+					요소에 clear 속성이 있으면 페이지 흐름이 달라진다. none 이 아니라면 display 속성은 무시된다.</div>
+					<div>none- 요소를 부유시키지 않는다.</div><br>
+					
+					<div>float 속성은 텍스트와 이미지 배치를 위해 만들어 졌지만, 레이아웃 배치용으로 자주 사용된다.</div>
+					<div>일반적으로 div태그는 가로길이가 전체를 차지하여 자동으로 줄 바꿈이 되어 버리는데, 이때 div 태그에 float 속성을 사용해<br>
+					주면 div태그를 가로로 배치 할 수 있다.</div><br>
+					
+					<div>clear 속성 값에 "both"을 적용하면 float의 left, right 모두 제거된다.</div><br>
+					
+					<div>The HTML code above will produce the following result:</div>
+					
+					 			
 		<div id="container" style="width:500px">
  
 		<div id="header" style="background-color:#FFA500;">

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>iframe</title>
+	</head>
+	
+	<body>
+		<h1>HTML iframe</h1>
+		<a href="./index.html">목록</a>
+			<h3>1. iframe을 이용하여 웹페이지안에 다른 웹페이지를 보여줄 수 있다.</h3>
+				<ol>
+					<li>&lt;iframe src="demo_iframe.htm" frameborder="0"&gt;&lt;/iframe&gt;</li>
+				</ol>
+			<h3>2. iframe이 다른 링크의 타겟으로 사용될 수 있다.</h3>
+			<div>W3Schools글자를 클릭하면 iframe안의 페이지가 www.w3schools.com으로 변경된다.</div>
+				<ol>
+					<li>&lt;p&gt;&lt;a href="http://www.w3schools.com" target="goal"&gt;W3Schools&lt;/a&gt;&lt;/p&gt;</li>
+					<li>&lt;iframe src="demo_iframe.htm" name="goal"&gt;&lt;/iframe&gt;</li>
+				</ol>
+				<p><a href="http://www.w3schools.com" target="goal">W3Schools</a></p>
+				<iframe src="demo_iframe.htm" name="goal"></iframe>
+				<ol>
+					<li>&lt;!DOCTYPE html&gt;</li>
+					<li>&lt;html&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; &lt;head&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="utf-8"&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; &lt;/head&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; &lt;body&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="http://cafe.naver.com/jjdev" target="_self"&gt;jjdev&lt;/a&gt;&lt;/li&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="http://cafe.naver.com/jjdev" target="_blank"&gt;jjdev&lt;/a&gt;&lt;/li&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="http://cafe.naver.com/jjdev" target="one"&gt;jjdev&lt;/a&gt;&lt;/li&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="http://cafe.naver.com/jjdev" target="two"&gt;jjdev&lt;/a&gt;&lt;/li&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;iframe src="http://www.daum.net" name="one"&gt;&lt;/iframe&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;iframe src="http://www.daum.net" name="two"&gt;&lt;/iframe&gt;</li>
+					<li>&nbsp;&nbsp;&nbsp; &lt;/body&gt;</li>
+					<li>&lt;!DOCTYPE html&gt;</li>
+				</ol>
+	</body>
+</html>
