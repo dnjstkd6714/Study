@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		<style>
+			table, tr, td {border:1px solid #000000}
+		</style>
+	</head>
+	<body>
+		<h1>HTML entity문자(키보드문자), 심볼문자</h1>
+		<a href="./index.html">목록</a>
+			<h3>1. entity문자, 심볼문자</h3>
+			<div>html에서 엔티니 문자(키보드 문자, html 문자)나 심볼문자를 나타내는 방법은 다음과 같다.</div>
+				<ol>
+					<li>&entity_name;</li>
+					<li>OR</li>
+					<li>&#entity_number;</li>
+				</ol>
+			
+			<h3>2. 스페이스 키</h3>
+				<div>웹페이지에서 스페이스키를 공백은 한칸밖에 인식하지 않는다. 만약 여러칸의 공백을 입력하기 위해서는 "&amp;nbsp;" 엔티티 문자로 공백을 나타내야 한다.</div>
+		
+			<h3>3. html문자</h3>
+				<div>"&lt;","&gt;"문자를 웹페이지에 표현하기 위해서는 &amp;lt; , &amp;gt;를 사용하여야 한다. 키보드의 &lt;,&gt;로 표현하면 태그로 인식한다.</div><br>
+					<foam>
+						<table>
+							<tr>
+								<td>Result</td>
+								<td>Description</td>
+								<td>Entity name</td>
+								<td>Entity number</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>non-breaking space</td>
+								<td>&amp;nbsp;</td>
+								<td>&amp;#160;
+							</tr>
+							<tr>
+								<td>&lt;</td>
+								<td>less than</td>
+								<td>&amp;lt;</td>
+								<td>&amp;#60;
+							</tr>					
+							<tr>
+								<td>&gt;</td>
+								<td>greater than</td>
+								<td>&amp;gt;</td>
+								<td>&amp;#62;
+							</tr>
+							<tr>
+								<td>&cent;</td>
+								<td>cent</td>
+								<td>&amp;cent;</td>
+								<td>&amp;#162;
+							</tr>
+							<tr>
+								<td>&pound;</td>
+								<td>pound</td>
+								<td>&amp;pound;</td>
+								<td>&amp;#163;
+							</tr>
+							<tr>
+								<td>&yen;</td>
+								<td>yen</td>
+								<td>&amp;yen;</td>
+								<td>&amp;#165;
+							</tr>
+							<tr>
+								<td>&euro;</td>
+								<td>euro</td>
+								<td>&amp;euro;</td>
+								<td>&amp;#8364;
+							</tr>
+							<tr>
+								<td>&copy;</td>
+								<td>copyright</td>
+								<td>&amp;copy;</td>
+								<td>&amp;#169;
+							</tr>
+							<tr>
+								<td>&reg;</td>
+								<td>registered trademark</td>
+								<td>&amp;reg;</td>
+								<td>&amp;#174;
+							</tr>
+						</table>
+					</foam>
+				<ol>
+					<li>&lt;p&gt;I will display &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; .&lt;p&gt;
+					<li>&lt;p&gt;I will display &amp;lt; &lt;p&gt;
+					<li>&lt;p&gt;I will display &amp;gt; &lt;p&gt;
+				</ol>
+			<h3>4. 심볼문자(링크를 참조)</h3>
+				<ul>
+					<li>수학기호 심볼 문자 : http://www.w3schools.com/charsets/ref_utf_math.asp</li>
+					<li>그리스기호 심볼 문자 : http://www.w3schools.com/charsets/ref_utf_greek.asp</li>
+					<li>통화기호 심볼 문자 : http://www.w3schools.com/charsets/ref_utf_currency.asp</li>
+					<li>화살표 심볼 문자 : http://www.w3schools.com/charsets/ref_utf_arrows.asp</li>
+					<li>기타(별,하트,..) 심볼 문자 : http://www.w3schools.com/charsets/ref_utf_symbols.asp</li>
+				</ul>
+	</body>
+</html>
