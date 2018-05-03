@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+	</head>
+	<body>
+	<h1>회원가입 화면(내가만든)</h1>
+	<a href=./index.html>목록</a><br><br>
+	<div>01. 로그인 정보</div><br>
+		<form>
+			<ul>
+				<li>사용자ID:<input type="text"> <input type="button" value="중복확인">띄어쓰기 없는 영문소문자,숫자조합</li><br>		
+				<li>비밀번호 :<input type="password">띄어쓰기 없는 영문소문자,숫자조합</li><br>
+				<li>비밀번호확인:<input type="password">비밀번호를 한번 더 입력하여주세요</li><br><br>
+			</ul>	
+		</form>
+	<div>02. 개인정보</div><br>
+		<form>
+			<ul>
+				<li>이름 :<input type="text" name="이름"></li><br>
+				<li>주민등록번호:<input type="text" maxlength="6"> - <input type="text" maxlength="7"></li><br>
+				<li>생년월일:<input type="date"><input type="radio" name="음양" value="양력">양력<input type="radio" name="음양" value="음력">음력</li><br>
+				<li>연락처:<input list="tel" size="5">
+							<datalist id="tel">
+				              	<option value="02 서울">
+		                    	<option value="051 부산">
+		                    	<option value="053 대구">
+		                    	<option value="032 인천">
+		                    	<option value="062 광주">
+		                    	<option value="042 대전">
+		                    	<option value="052 울산">
+		                    	<option value="031 경기">
+		                    	<option value="033 강원">
+		                    	<option value="043 충북">
+		                    	<option value="041 충남">
+		                    	<option value="063 전북">
+		                    	<option value="061 전남">
+		                    	<option value="054 경북">
+		                    	<option value="055 경남">
+		                    	<option value="064 제주">
+							</datalist>	- <input type="tel" size="5" maxlength="4"> - <input type="tel" size="5" maxlength="4"><input type="radio" name="자택직장" value="자택">자택<input type="radio" name="자택직장" value="직장">직장</li><br>
+				<li>휴대전화:<input list="tel" size="5" maxlength="4"> - <input type="tel" size="5" maxlength="4"> - <input type="tel" size="5" maxlength="4"></li><br>		
+				<li>e-mail주소:<input type="email"></li><br>
+				<li>주소:<input type="tel" size="5" maxlength="4"> - <input type="tel" size="5" maxlength="4"> <input type="button" value="우편번호 찾기"><input type="radio" name="자택직장" value="자택">자택<input type="radio" name="자택직장" value="직장">직장<br>
+				<input type="text" size="30" maxlength="30"><br><input type="text" size="30" maxlength="30"></li><br><br>
+				</ul>
+		</form>
+	<div>03. 기타정보</div><br>
+		<form>
+			<ul>
+				<li>직업:<input list="job" size="10">
+							<datalist id="job">
+								<option value="---선택하세요---">
+				              	<option value="회사원">
+		                    	<option value="연구전문직">
+		                    	<option value="교수">
+		                    	<option value="학생">
+		                    	<option value="일반자영업">
+		                    	<option value="공무원">
+		                    	<option value="의료인">
+		                    	<option value="법조인">
+		                    	<option value="종교,언론/예술인">
+		                    	<option value="농,축,수산/광공업인">
+		                    	<option value="단체">
+		                    	<option value="주부">
+		                    	<option value="무직">
+		                    	<option value="기타">
+		                    	<option value="프리랜서">
+		                    	<option value="군인">
+		                    	<option value="서비스업">
+							</datalist></li><br>
+				<li>회사명(학교):<input type="text"><input type="button" value="찾기"><input type="radio" name="직장학교" value="직장">직장<input type="radio" name="직장학교" value="학교">학교</li><br>
+				<li>사업자번호:<input type="text"></li><br>
+				<li>부서명(학과):<input type="text"></li><br>
+				<li>직위(학년):<input type="text"></li><br>
+				<li>관심분야:<input list="hobby" size="10">
+							<datalist id="hobby">
+								<option value="---선택하세요---">
+				              	<option value="벤처창업">
+		                    	<option value="정부정책동향">
+		                    	<option value="business">
+		                    	<option value="자금지원">
+		                    	<option value="신기술소식">
+								<option value="취업/고용">
+		                      	<option value="기타">
+							</datalist></li><br>
+				<li>tp웹진 수신:<input type="radio" name="수신동의" value="수신동의">수신동의<input type="radio" name="수신동의" value="수신하지않음">수신하지않음&nbsp;&nbsp;&nbsp;&nbsp;(Tp에서 제공하는 webzine 서비스를 받아보시겠습니까?)</li><br>
+				<li>홈페이지 주소:<input type="url"></li><br>
+				<li>자기소개<textarea row="30" cols="30"></textarea></li><br>
+			</ul>
+		</form>	
+		<form>
+			<input type="button" value="가입"> <input type="button" value="취소">
+		</form>	
+					
+	</body>
+</html>
